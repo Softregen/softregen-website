@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EventusBuilder — the engine underneath | Softregen</title>
+<meta name="description" content="EventusBuilder generates event-sourced applications from a schema definition. It is the engine AIMS Agent runs on. Not sold today.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">Softregen</a>
+    <nav>
+      <a href="/aims/">AIMS Agent</a>
+      <a href="/eventus/" aria-current="page">EventusBuilder</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero">
+      <h1>EventusBuilder</h1>
+      <p class="lede">
+        The engine <a href="/aims/">AIMS Agent</a> runs on. It generates event-sourced applications
+        from a schema definition — the reason our audit trail is a property of the system rather than a
+        feature someone remembered to add.
+      </p>
+    </section>
+
+    <h2>What it does</h2>
+
+    <p>
+      You define your entities once. EventusBuilder generates the application around them: the storage,
+      the API, the workflow orchestration, and a client. Every change to every entity is recorded as an
+      event, so the current state is a view derived from history rather than the only thing you keep.
+    </p>
+
+    <p>
+      That single decision is what makes a question like <em>how did this record come to say this, and
+      who changed it, and when</em> answerable by default instead of by investigation. In a compliance
+      product that question is not occasional. It is the product.
+    </p>
+
+    <h2>Why it exists</h2>
+
+    <p>
+      We did not set out to build a generator. We set out to build AIMS Agent, and found that the
+      properties it needed — complete history, workflow-owned state changes, an audit trail nobody can
+      forget to write — are properties you get cheaply if they are in the foundation and expensively if
+      they are not.
+    </p>
+
+    <p>
+      So the foundation came first. AIMS Agent is the first thing built on it, and the reason we can
+      say what the engine is good for rather than what we hope it might be.
+    </p>
+
+    <div class="panel">
+      <h3>Not for sale today</h3>
+      <p>
+        EventusBuilder is not a product you can buy right now, and we would rather say so than imply
+        otherwise. It is here because it is the honest answer to how AIMS Agent works, and because the
+        engineering is the part of us worth showing.
+      </p>
+      <p>
+        If you are building something with these constraints and want to compare notes, that is a
+        conversation we would enjoy.
+      </p>
+      <p><a class="cta" href="/contact/">Get in touch →</a></p>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Softregen LLC</span>
+    <a href="/">Softregen</a>
+    <a href="/aims/">AIMS Agent</a>
+    <a href="/contact/">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>

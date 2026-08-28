@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://softregen.com/sitemap.xml
