@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your data — where it goes and who sees it | Softregen</title>
+<meta name="description" content="Which company processes your text, what each one sees, and what we are changing. Named, not summarised.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">Softregen</a>
+    <nav>
+      <a href="/aims/">AIMS Agent</a>
+      <a href="/eventus/">EventusBuilder</a>
+      <a href="/data/" aria-current="page">Your data</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero">
+      <h1>Your data</h1>
+      <p class="lede">
+        To describe your AI systems to us, you have to tell us about them. Here is exactly where that
+        text goes and which companies see it — named, not summarised.
+      </p>
+    </section>
+
+    <h2>Documents you upload</h2>
+
+    <p>
+      <strong>They are processed on our own machines and are not sent to any third party.</strong>
+    </p>
+
+    <p>
+      To search a document we first convert it into a mathematical form. Many products send your text
+      to an outside service to do that. We do not. The model that reads your documents runs inside our
+      own deployment, so the contents never leave it.
+    </p>
+
+    <p>
+      That model is <code>multilingual-e5-large</code>, published by Microsoft Research under an MIT
+      licence. We run it ourselves. Microsoft receives nothing.
+    </p>
+
+    <h2>Your questions, and the answers</h2>
+
+    <p>
+      Answering a question means sending it to a language model, because a model has to read the
+      question in order to answer it. There is no way around that, so the question becomes which
+      company reads it.
+    </p>
+
+    <div class="scroll">
+    <table>
+      <tr><th>What</th><th>Who processes it</th><th>Where</th></tr>
+      <tr><td>Documents you upload</td><td><strong>Nobody outside</strong></td><td>our own machines</td></tr>
+      <tr><td>Your questions and our answers</td><td><strong>Mistral</strong></td><td>France</td></tr>
+      <tr><td>If Mistral is unavailable</td><td>Google</td><td>EU region</td></tr>
+      <tr><td>If both are unavailable</td><td>OpenAI</td><td>United States</td></tr>
+    </table>
+    </div>
+
+    <p>
+      Mistral is a French company and it is the default for anything containing your text. The second
+      and third are fallbacks that exist so the service keeps working when a provider has an outage.
+      <strong>The third one is American, and we would rather tell you that than let you discover it.</strong>
+    </p>
+
+    <h2>What we are changing</h2>
+
+    <p>
+      One part is not where we want it yet, and we would rather write it down than wait until it is
+      fixed.
+    </p>
+
+    <p>
+      When you ask a question about the regulation, we search the legal text to find the relevant
+      passages. That search currently uses an American service to convert your question into a
+      searchable form. Your uploaded documents never go there — but a question you type does.
+    </p>
+
+    <p>
+      We are moving that step onto our own machines, using the same model that already handles your
+      documents. It requires rebuilding our copy of the legal text first, which is work in progress
+      rather than a plan.
+    </p>
+
+    <h2>Yes, a model writes the documents</h2>
+
+    <p>
+      A sophisticated buyer works this out quickly, so we will say it first: the reasoning and the
+      documentation are produced by a language model. Three things make that safe to rely on.
+    </p>
+
+    <div class="grid">
+      <div>
+        <h3>Every claim is traceable</h3>
+        <p>
+          Statements are tied to a specific Article, Annex or Recital. You can open the regulation and
+          check. A model that has to cite is constrained by what it cites.
+        </p>
+      </div>
+      <div>
+        <h3>We never assert compliance</h3>
+        <p>
+          The output describes what the regulation requires and what your answers say. It does not
+          conclude that you comply — nobody can conclude that on your behalf.
+        </p>
+      </div>
+      <div>
+        <h3>You review it</h3>
+        <p>
+          It is your documentation, submitted under your name. We produce the draft and the reasoning;
+          the judgement remains yours, and the record shows how each conclusion was reached.
+        </p>
+      </div>
+    </div>
+
+    <h2>What we have not built yet</h2>
+
+    <p>
+      AIMS Agent is not yet generally available, so this page describes how the system is designed and
+      how it behaves today — not a service you can currently sign up to. When it is available, this
+      page will say so and will list every processor and location in force at that time.
+    </p>
+
+    <p class="note">
+      If your security or procurement team needs this in a different form — a questionnaire, a
+      processing agreement, a data flow diagram — <a href="/contact/">write to us</a> and you will get
+      an answer from one of the two people who built it.
+    </p>
+
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Softregen LLC</span>
+    <a href="/">Softregen</a>
+    <a href="/aims/">AIMS Agent</a>
+    <a href="/contact/">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -137,3 +137,14 @@ footer.site .spacer { margin-left: auto; }
   dl.facts { grid-template-columns: 1fr; gap: 0.15rem; }
   dl.facts dd { margin-bottom: 0.7rem; }
 }
+
+/* ---- tables ---- */
+
+.scroll { overflow-x: auto; margin: 1.25rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { text-align: left; padding: 0.6rem 0.8rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th {
+  font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.07em;
+  color: var(--ink-faint); font-weight: 640;
+}
+tr:last-child td { border-bottom: none; }
