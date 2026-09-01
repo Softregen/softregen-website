@@ -42,8 +42,8 @@
       That matters here more than it usually does. Compliance documentation is not a place for software
       that mostly works. If a system tells a company it is outside the scope of a regulation and it is
       not, the company carries that mistake to a regulator. So we build the way that problem deserves:
-      every change to every record is stored as an event, so the full history of how a conclusion was
-      reached is always recoverable — not just the conclusion.
+      the system is designed around what it must be able to account for, and the record of how a
+      conclusion was reached is produced by that design — not added afterwards and hoped for.
     </p>
 
     <h2>What we build</h2>
@@ -60,8 +60,9 @@
       <div>
         <h3><a href="/eventus/">EventusBuilder</a></h3>
         <p>
-          The engine underneath. It generates event-sourced applications — the reason AIMS Agent has a
-          complete audit trail rather than a bolted-on log. Not sold today.
+          The engine underneath. You declare what a system must be able to account for, and it builds
+          the application around that — which is why AIMS Agent can show its reasoning rather than
+          just its conclusions. Not sold today.
         </p>
       </div>
     </div>

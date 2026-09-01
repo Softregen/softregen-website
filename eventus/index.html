@@ -35,15 +35,27 @@
     <h2>What it does</h2>
 
     <p>
-      You define your entities once. EventusBuilder generates the application around them: the storage,
-      the API, the workflow orchestration, and a client. Every change to every entity is recorded as an
-      event, so the current state is a view derived from history rather than the only thing you keep.
+      Most frameworks start from the shape of your data. This one starts from what happens.
     </p>
 
     <p>
-      That single decision is what makes a question like <em>how did this record come to say this, and
-      who changed it, and when</em> answerable by default instead of by investigation. In a compliance
-      product that question is not occasional. It is the product.
+      You declare what your system needs to record — and that declaration <em>is</em> the declaration of
+      what can happen. Each type you declare produces a fixed set of event types with stable
+      identifiers, and those events are the system's entire vocabulary. Nothing can be recorded that
+      was not named in the design, which is the point rather than a limitation: it is what makes the
+      record complete by construction instead of by discipline.
+    </p>
+
+    <p>
+      EventusBuilder generates the application around that vocabulary — the storage, the API, the
+      workflow orchestration and a client. The current state of anything is derived from the events
+      that produced it.
+    </p>
+
+    <p>
+      So <em>how did this come to say this, who changed it, and when</em> is answered by reading the
+      record rather than by investigating it. In a compliance product that question is not occasional.
+      It is the product.
     </p>
 
     <h2>Why it exists</h2>
