@@ -63,14 +63,15 @@
       <tr><td>Documents you upload</td><td><strong>Nobody outside</strong></td><td>our own machines</td></tr>
       <tr><td>Your questions and our answers</td><td><strong>Mistral</strong></td><td>France</td></tr>
       <tr><td>If Mistral is unavailable</td><td>Google</td><td>EU region</td></tr>
-      <tr><td>If both are unavailable</td><td>OpenAI</td><td>United States</td></tr>
     </table>
     </div>
 
     <p>
-      Mistral is a French company and it is the default for anything containing your text. The second
-      and third are fallbacks that exist so the service keeps working when a provider has an outage.
-      <strong>The third one is American, and we would rather tell you that than let you discover it.</strong>
+      Mistral is a French company and it is the default for anything containing your text. Google is
+      the fallback that exists so the service keeps working if Mistral has an outage.
+      <strong>If both are unavailable, we stop and tell you, rather than quietly sending your text to
+      a third company.</strong> That third company used to be American — we removed it on purpose,
+      and we would rather tell you that than let you assume it is still there.
     </p>
 
     <h2>What we are changing</h2>
@@ -84,6 +85,13 @@
       When you ask a question about the regulation, we search the legal text to find the relevant
       passages. That search currently uses an American service to convert your question into a
       searchable form. Your uploaded documents never go there — but a question you type does.
+    </p>
+
+    <p>
+      There is a second place this happens: the free assessment on our home page, where you describe
+      your AI system before signing up. That description — up to 5,000 characters — is also converted
+      by the same American service, for the same reason: to search our reference material for what
+      applies to your case.
     </p>
 
     <p>
